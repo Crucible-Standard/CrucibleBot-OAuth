@@ -1,6 +1,6 @@
 const { request } = require('undici');
 const express = require('express');
-const { clientId, clientSecret, port } = require('./config.json');
+const { clientId, clientSecret, port } = require('./config').default;
 
 async function getJSONResponse(body) {
 	let fullBody = '';
